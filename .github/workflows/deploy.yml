@@ -23,3 +23,5 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: dist
+          clean: true
+          force: true
