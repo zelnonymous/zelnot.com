@@ -1,0 +1,17 @@
+<svg width="150" height="150" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Framed square -->
+  <rect x="10" y="10" width="140" height="140" rx="12" fill="none" stroke="#0f172a" stroke-width="3"></rect>
+
+  <!-- Abstract integrated Z -->
+  <g stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(35,40)">
+    <line x1="0" y1="0" x2="90" y2="0"></line>
+    <line x1="90" y1="0" x2="0" y2="80"></line>
+    <line x1="0" y1="80" x2="90" y2="80"></line>
+  </g>
+
+  <!-- Integration nodes -->
+  <circle cx="35" cy="40" r="6" fill="#0f172a"></circle>
+  <circle cx="125" cy="40" r="6" fill="#0f172a"></circle>
+  <circle cx="35" cy="120" r="6" fill="#0f172a"></circle>
+  <circle cx="125" cy="120" r="6" fill="#0f172a"></circle>
+</svg>
