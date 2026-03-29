@@ -1,0 +1,239 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="Contact" 
+  description="Get in touch with Zelnot for technology consulting services. Request a consultation or send a general inquiry."
+>
+  <section class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white section-padding">
+    <div class="container-tight">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        Contact
+      </h1>
+      <p class="text-xl text-slate-300 max-w-2xl">
+        Ready to discuss your project? Have a question? I'd love to hear from you.
+      </p>
+    </div>
+  </section>
+
+  <section id="consultation" class="section-padding">
+    <div class="container-tight">
+      <div class="grid lg:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-3xl font-bold text-slate-900 mb-4">Request a Consultation</h2>
+          <p class="text-slate-600 mb-8">
+            Tell me about your project and I'll get back to you within 24-48 hours to schedule 
+            an initial conversation. This helps me understand your needs before we connect.
+          </p>
+
+          <form 
+            action="https://formspree.io/f/mykbebjz"
+            method="POST" 
+            class="space-y-6"
+          >
+            <input type="hidden" name="_subject" value="Consultation Request from Website" />
+            
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-700 mb-2">
+                Your Name <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-shadow"
+                placeholder="Jane Smith"
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-sm font-medium text-slate-700 mb-2">
+                Email Address <span class="text-red-500">*</span>
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-shadow"
+                placeholder="jane@company.com"
+              />
+            </div>
+
+            <div>
+              <label for="company" class="block text-sm font-medium text-slate-700 mb-2">
+                Company / Organization
+              </label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-shadow"
+                placeholder="Acme Corporation"
+              />
+            </div>
+
+            <div>
+              <label for="service" class="block text-sm font-medium text-slate-700 mb-2">
+                Service of Interest
+              </label>
+              <select
+                id="service"
+                name="service"
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-shadow"
+              >
+                <option value="">Select a service...</option>
+                <option value="development">Custom Software Development</option>
+                <option value="integration">Software Integration</option>
+                <option value="devops">DevOps & CI/CD</option>
+                <option value="multiple">Multiple / Not Sure</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="message" class="block text-sm font-medium text-slate-700 mb-2">
+                Tell me about your project <span class="text-red-500">*</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                rows="5"
+                class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none transition-shadow resize-none"
+                placeholder="Describe your project, challenges, or goals..."
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="btn-primary w-full text-lg py-4"
+            >
+              Submit Request
+            </button>
+
+            <p class="text-sm text-slate-500 text-center">
+              I'll respond within 24-48 hours to discuss next steps.
+            </p>
+          </form>
+        </div>
+
+        <div class="lg:pl-8">
+          <div class="bg-slate-50 rounded-2xl p-8 mb-8">
+            <h3 class="text-xl font-bold text-slate-900 mb-6">Other Ways to Reach Me</h3>
+            
+            <div class="space-y-6">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Email</h4>
+                  <a href="mailto:zelnot@zelnot.com" class="text-sky-600 hover:text-sky-700">
+                    zelnot@zelnot.com
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Phone</h4>
+                  <a href="tel:+14125270161" class="text-sky-600 hover:text-sky-700">
+                    (412) 527-0161
+                  </a>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 bg-sky-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-slate-900">Location</h4>
+                  <p class="text-slate-600">
+                    Pittsburgh, Pennsylvania<br />
+                    <span class="text-sm">Services available remotely worldwide</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-slate-200 pt-8">
+            <h3 class="text-xl font-bold text-slate-900 mb-4">General Inquiry</h3>
+            <p class="text-slate-600 mb-6">
+              Not ready for a consultation? Have a question about my services, rates, 
+              or availability? Send a general message.
+            </p>
+            
+            <form 
+              action="https://formspree.io/f/mreopokr"
+              method="POST"
+              class="space-y-4"
+            >
+              <input type="hidden" name="_subject" value="General Inquiry from Website" />
+              
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="gen-name" class="block text-sm font-medium text-slate-700 mb-1">
+                    Name <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="gen-name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                  />
+                </div>
+                <div>
+                  <label for="gen-email" class="block text-sm font-medium text-slate-700 mb-1">
+                    Email <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="gen-email"
+                    name="email"
+                    required
+                    class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="gen-message" class="block text-sm font-medium text-slate-700 mb-1">
+                  Message <span class="text-red-500">*</span>
+                </label>
+                <textarea
+                  id="gen-message"
+                  name="message"
+                  required
+                  rows="3"
+                  class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-sky-500 focus:border-sky-500 outline-none resize-none"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-secondary w-full"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

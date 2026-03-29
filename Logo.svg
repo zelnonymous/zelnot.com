@@ -1,0 +1,41 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style>
+      .primary { fill: #0f172a; }
+      .accent { stroke: #1e293b; }
+      .subtle { fill: #475569; }
+    </style>
+  </defs>
+
+  <!-- Icon Container -->
+  <g transform="translate(60,50)">
+    <!-- Framed square -->
+    <rect x="0" y="0" width="140" height="140" rx="12" fill="none" stroke="#0f172a" stroke-width="3"></rect>
+
+    <!-- Abstract integrated Z -->
+    <g stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" transform="translate(25,30)">
+      <line x1="0" y1="0" x2="90" y2="0"></line>
+      <line x1="90" y1="0" x2="0" y2="80"></line>
+      <line x1="0" y1="80" x2="90" y2="80"></line>
+    </g>
+
+    <!-- Integration nodes -->
+    <circle cx="25" cy="30" r="6" fill="#0f172a"></circle>
+    <circle cx="115" cy="30" r="6" fill="#0f172a"></circle>
+    <circle cx="25" cy="110" r="6" fill="#0f172a"></circle>
+    <circle cx="115" cy="110" r="6" fill="#0f172a"></circle>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="250" y="130" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="72" font-weight="600" fill="#0f172a" letter-spacing="1">
+    zelnot
+  </text>
+
+  <!-- Tagline -->
+  <text x="252" y="170" font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif" font-size="20" fill="#475569" letter-spacing="2">
+    SOFTWARE ENGINEERING • DEVOPS • SYSTEM INTEGRATION
+  </text>
+
+</svg>
