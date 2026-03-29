@@ -23,4 +23,3 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: dist
-          CNAME: zelnot.com
